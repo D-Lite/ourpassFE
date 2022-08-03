@@ -1,0 +1,18 @@
+// app global css in SCSS form
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+.text-brand {
+  color: #000000 !important;
+}
+.bg-brand {
+  background: #eeecf6 !important;
+}
+
+@font-face {
+  font-family: customfont;
+  src: url(./fonts/poppins-regular.woff);
+}
+
+// declare a class which applies it
+.app-font {
+  font-family: "customfont";
+}
