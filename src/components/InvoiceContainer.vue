@@ -3,9 +3,11 @@
     <div
       class="company_info fit row inline wrap justify-between items-center content-center"
     >
-      <div class="col-auto">
-        <q-icon style="color: #397cf9" size="3rem" name="water_drop"></q-icon>
-        <div class="col-auto">
+      <div class="row inline wrap justify-center items-center">
+        <div class="icon_info">
+          <q-icon style="color: #fff" size="3rem" name="water_drop"></q-icon>
+        </div>
+        <div class="col-auto q-mx-lg">
           <h5 class="q-pa-none q-ma-none text-weight-bolder text-subtitle1">
             {{ invoice.name }}
           </h5>
@@ -18,7 +20,9 @@
           </address>
         </div>
       </div>
-      <address class="q-mt-lg text-common text-subtitle2 text-weight-medium">
+      <address
+        class="addresss q-mt-lg text-common text-subtitle2 text-weight-medium"
+      >
         {{ invoice.location.street }} <br />
         {{ invoice.location.cityWithPostCode }}<br />
         {{ invoice.location.country }}
@@ -66,6 +70,16 @@ export default {
   border-radius: 1.5rem;
 }
 
+.icon_info {
+  background-color: #397cf9;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 @media (min-width: 1024px) {
   .invoice-container {
     padding: 1.5rem;
@@ -82,6 +96,13 @@ address a {
 
   .invoice-container {
     width: 80vw;
+  }
+
+  .addresss {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
   }
 }
 @media (max-width: 450px) {

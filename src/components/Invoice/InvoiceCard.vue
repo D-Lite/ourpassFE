@@ -20,7 +20,7 @@
         </dd>
       </dl>
     </div>
-    <div class="column q-mt-lg q-mt-sm-none items-sm-end">
+    <div class="column q-mt-lg q-mt-sm-none items-end cardInfo">
       <h6 class="q-ma-none text-subtitle2 q-mb-md">Billed to</h6>
 
       <p>{{ invoice?.billedTo }}</p>
@@ -48,6 +48,10 @@ export default {
 <style scoped>
 @media (max-width: 450px) {
   .InvoiceCard {
+    align-items: flex-start;
+  }
+  .cardInfo {
+    display: flex;
     align-items: flex-start;
   }
 }

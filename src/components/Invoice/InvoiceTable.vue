@@ -82,9 +82,10 @@
           <q-btn
             @click="removeField"
             round
+            size="10px"
             class="text-white"
             color="dark"
-            icon="add"
+            icon="eva-minus"
           />
         </q-td>
       </template>
@@ -95,6 +96,7 @@
             round
             class="text-white"
             color="primary"
+            size="10px"
             icon="add"
           />
         </q-td>
@@ -103,7 +105,6 @@
     <div
       class="fit row inline wrap justify-between items-center content-center"
     >
-      <!-- fit row inline wrap justify-between items-center content-center -->
       <InvoicePaymentMethod class="col-6"></InvoicePaymentMethod>
       <!-- <q-space></q-space> -->
       <InvoiceSummary class="col-4" :report="report"></InvoiceSummary>
