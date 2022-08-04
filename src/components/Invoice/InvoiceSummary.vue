@@ -2,7 +2,6 @@
   <div class="invoicesummary q-pa-md">
     <dl class="row justify-between items-center">
       <dt class="q-mr-xs text-weight-bold">Sub Total</dt>
-      <!-- Could be improved with a formatter package -->
       <dd class="text-weight-bold">${{ report.subTotal }}.00</dd>
     </dl>
     <dl class="row justify-between items-center">
@@ -54,7 +53,9 @@ export default {
 <style scoped>
 @media (min-width: 300px) and (max-width: 1023px) {
   .invoicesummary {
-    max-width: 80%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 </style>

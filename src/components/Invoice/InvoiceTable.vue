@@ -103,11 +103,11 @@
       </template>
     </q-table>
     <div
-      class="fit row inline wrap justify-between items-center content-center"
+      class="fit row inline wrap justify-between items-center content-center paySum"
     >
-      <InvoicePaymentMethod class="col-6"></InvoicePaymentMethod>
+      <InvoicePaymentMethod class=""></InvoicePaymentMethod>
       <!-- <q-space></q-space> -->
-      <InvoiceSummary class="col-4" :report="report"></InvoiceSummary>
+      <InvoiceSummary class="" :report="report"></InvoiceSummary>
     </div>
   </div>
 </template>
@@ -213,7 +213,7 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   .cta-customize {
     max-height: 3rem;
     line-height: 1.3em;
@@ -221,6 +221,14 @@ export default {
 
   .subtitle {
     max-width: 4rem;
+  }
+
+  .paySum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
   }
 }
 </style>

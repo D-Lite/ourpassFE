@@ -15,7 +15,7 @@
         size="1rem"
         style="border-radius: 0.8rem; text-transform: capitalize"
         unelevated
-        icon="sort"
+        icon="tune"
       ></q-btn>
     </div>
   </div>
