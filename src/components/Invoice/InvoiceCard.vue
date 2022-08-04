@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fit row inline wrap justify-between items-center content-center rounded bg-custom q-px-xl q-py-md text-white"
+    class="cardDisplay fit row inline wrap justify-between items-center content-center rounded bg-custom q-px-xl q-py-md text-white"
   >
     <div>
       <h6 class="q-ma-none text-subtitle2 q-mb-md">Invoice Number</h6>
@@ -54,5 +54,30 @@ export default {
     display: flex;
     align-items: flex-start;
   }
+}
+
+.cardDisplay {
+}
+#magnifying-glass {
+  font-size: 10em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid red;
+  position: relative;
+  border-radius: 0.35em;
+}
+#magnifying-glass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: red;
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
 }
 </style>
