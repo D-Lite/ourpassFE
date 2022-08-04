@@ -7,12 +7,52 @@
   background: #eeecf6 !important;
 }
 
+/* app global css */
 @font-face {
-  font-family: customfont;
-  src: url(./fonts/poppins-regular.woff);
+  font-family: Poppins;
+  src: url(./fonts//poppins-v20-latin-regular.woff2),
+    url(./fonts//poppins-v20-latin-regular.woff), local(Roboto);
 }
 
-// declare a class which applies it
-.app-font {
-  font-family: "customfont";
+body {
+  font-family: Poppins;
+  background-color: #fafafa;
+}
+/* resetting address styling */
+address {
+  font-style: normal;
+}
+dd {
+  margin-inline-start: 0;
+}
+.brand-accent {
+  color: #244042;
+}
+.text-common {
+  color: #b0b4b8 !important;
+}
+.bg-custom {
+  background-color: #4c49a4;
+}
+.bg-custom-two {
+  background-color: #fcfcfc;
+}
+.rounded {
+  border-radius: 1rem;
+}
+/* TODO: Revise class names adn remove important */
+.custom-fit {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+.min-w-full {
+  min-width: 100%;
+}
+.max-custom-fit {
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+}
+.max-custom-fit {
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
 }

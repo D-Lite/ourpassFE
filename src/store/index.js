@@ -1,7 +1,7 @@
 import { store } from "quasar/wrappers";
 import { createStore } from "vuex";
-import account from "./modules/account";
-import invoice from "./modules/invoice";
+import account from "./module/account";
+import invoice from "./module/invoice";
 
 // import example from './module-example'
 
