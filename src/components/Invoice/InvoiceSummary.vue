@@ -55,7 +55,6 @@ export default {
 @media (min-width: 300px) and (max-width: 1023px) {
   .invoicesummary {
     max-width: 80%;
-    background-color: red;
   }
 }
 </style>
